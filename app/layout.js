@@ -1,20 +1,20 @@
-// app/layout.js
+'use client';
 import './globals.css'
 import Header from '../components/header'
 import Footer from '../components/footer'
-
-export const metadata = {
-  title: 'My Physics Lab',
-  description: 'Interaktiv maktab fizikasi laboratoriyasi',
-}
+import { usePathname } from 'next/navigation'
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname()
+
+  const isWelcomePage = pathname === '/'
+
   return (
     <html lang="uz">
       <body>
-        <Header />
+        {!isWelcomePage && <Header />}
         <main>{children}</main>
-        <Footer />
+        {!isWelcomePage && <Footer />}
       </body>
     </html>
   )
