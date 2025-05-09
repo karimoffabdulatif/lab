@@ -1,7 +1,7 @@
 // app/layout.js
 import './globals.css'
-import Header from './components/header'
-import Footer from './components/footer'
+import Header from '../components/header'
+import Footer from '../components/footer'
 
 export const metadata = {
   title: 'My Physics Lab',

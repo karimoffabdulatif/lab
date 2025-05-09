@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,10 +16,12 @@ export default function Home() {
           </p>
         </div>
 
+        <Link href="/labaratory">
         <button className="bg-blue-700 animate-pulse text-white p-3 font-semibold rounded-[8px] 
   transform transition duration-300 ease-in-out hover:scale-105 hover:bg-blue-800">
           Visiting the virtual laboratory
         </button>
+        </Link>
       </section>
 
       <section className="flex  justify-center pt-10">
