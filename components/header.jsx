@@ -31,7 +31,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="container animate-gradient-slide bg-gradient-to-r from-blue-900 to-black">
+    <nav className="container px-4 lg:px-14 animate-gradient-slide bg-gradient-to-r from-blue-900 to-black">
       <div className="py-5 flex justify-between items-center">
         <Link href="/">
           <h1 className="text-3xl text-white font-bold">Lab.UZ</h1>
@@ -88,15 +88,13 @@ const Header = () => {
       <div
         className={`${
           menuOpen ? "block" : "hidden"
-        } sm:hidden bg-blue-950 opacity-95 p-5 flex flex-col gap-5 absolute top-0 left-0 w-64 h-full transition-transform transform duration-7000 ease-in-out ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}
+        } sm:hidden bg-blue-950 z-20 opacity-95 p-5 flex flex-col gap-5 absolute top-0 left-0 w-64 h-full transition-transform transform duration-7000 ease-in-out ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex justify-between items-center">
           <h1 className="text-3xl text-white font-bold">Lab.UZ</h1>
-          <button onClick={toggleMenu}>
-            <HiOutlineX className="text-white w-8 h-8" />
-          </button>
+         
         </div>
-        <div className="-mx-6 border-t-2 border-white my-4"></div>
+        <div className="-mx-5 border-t-2 border-white "></div>
         <Link href="/about">
           <p className="text-xl text-white cursor-pointer hover:text-blue-400">
             About
