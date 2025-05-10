@@ -7,7 +7,7 @@ const labData = [
     { title: "Zener diyot", image: "/zener.JPG", slug: "/zener" },
     { title: "Galvanometrni ampermetrga aylantirish", image: "/galvan.jpg", slug: "/galvan" },
     { title: "Metr ko'prigi - simning qarshiligi", image: "/metr.jpg", slug: "/metr" },
-    { title: "Potensiometr - hujayraning ichki qarshiligi", image: "/potensiometr.jpg", slug: "potensiometr-ichki-qarshilik" },
+    { title: "Potensiometr - hujayraning ichki qarshiligi", image: "/potensiometr.jpg", slug: "/potans" },
     { title: "AC sonometri", image: "/ac.png", slug: "/ac" },
     { title: "Diyotning xususiyatlari", image: "/diyod.jpg", slug: "/diyot" },
     { title: "Transistorlar xususiyatlari", image: "/tran.jpg", slug: "/tran" },
@@ -63,7 +63,7 @@ const Labaratory = () => {
     }, [searchQuery]);
 
     return (
-        <div className="pb-14 container bg-gray-200 min-h-screen">
+        <div className="pb-14 container px-4 bg-gray-200 min-h-screen">
             <h1 className="text-3xl font-bold text-center mb-6 pt-8">Fizika Laboratoriyasi</h1>
 
             <div className="flex justify-center mb-6">
